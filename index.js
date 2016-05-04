@@ -4,18 +4,12 @@
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
-curl -X POST --data-urlencode  
+
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
-
-$.ajax({
- url: "https://hooks.slack.com/services/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",
- type: 'POST',
- data: "payload":'{"channel": "#heroku-deploy", "username": "webhookbot", "text": "This is posted to #heroku-deploy and comes from a bot named webhookbot.", "icon_emoji": ":ghost:"}',
-});
 
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
