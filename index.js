@@ -14,10 +14,7 @@ if (!databaseUri) {
 $.ajax({
  url: "https://hooks.slack.com/services/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",
  type: 'POST',
- dataType: 'json',
- contentType: 'application/json',
- processData: false,
- data: 'payload={"channel": "#heroku-deploy", "username": "webhookbot", "text": "This is posted to #heroku-deploy and comes from a bot named webhookbot.", "icon_emoji": ":ghost:"}',
+ data: "payload":'{"channel": "#heroku-deploy", "username": "webhookbot", "text": "This is posted to #heroku-deploy and comes from a bot named webhookbot.", "icon_emoji": ":ghost:"}',
 });
 
 var api = new ParseServer({
