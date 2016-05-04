@@ -9,6 +9,10 @@
       "description": "Configure Parse API route.",
       "value": "/parse"
     },
+    "MONGODB_URI": {
+      "description": "Configure Parse Mongo database.",
+      "value": ""
+    },
     "APP_ID": {
       "description": "A unique identifier for your app.",
       "value": "myAppId"
